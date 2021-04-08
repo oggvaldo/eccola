@@ -337,6 +337,36 @@ const infosCards = [
       "  With whom have you discused accountability and other ethical?",
     ],
     praticalExample: "",
+    link: "http://www.facebook.com.br"
+  },
+  {
+    number: "21",
+    type: "Accountability",
+    title: "Minimizing Negative Impacts",
+    motivation:
+      "Minimizing negative impacts of the system is financially important for any developer organization. Incidents are often costly.",
+    whatToDo: [
+      "First, consider:",
+      "Is your stakeholder analysis is up-to-date {Card #0}",
+      "Have you discussed risks? {Card #13}",
+      "Have you discussed auditability? {Card #18}",
+      "Have you discussed redress issues? {Card #19}",
+      "Are the people involved with the development of the system also involved with the development of the system also involved with it during its operational life? If not, they may not feel as accountable.",
+      "Are you aware of laws related to the system?",
+      "Can users of the system somehow report volnerabilities, risks and other issues in the system?",
+      "  With whom have you discused accountability and other ethical?",
+    ],
+    praticalExample: "",
+    links: [
+      {
+        descricao: 'Google',
+        link: 'http://google.com.br'
+      },
+      {
+        descricao: 'Facebook',
+        link: 'http://facebook.com.br'
+      }
+    ]
   },
   
 ];

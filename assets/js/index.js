@@ -81,6 +81,17 @@ const templateList = (list) => {
   }, "");
 };
 
+const templateListLink = (list) => {
+  return list.reduce((accumulator, actual) => {
+    return (accumulator += `
+      <li>
+      <a href="${actual.link}">${actual.descricao}</a>
+      </li>
+     `);
+  }, "");
+};
+
+
 // Função que pega template criado e adiciona no DOM
 const insertCardsIntoPage = (template) => {
   const cards = document.querySelector(".cards");
@@ -88,6 +99,7 @@ const insertCardsIntoPage = (template) => {
   // adiciona funcionalidade de selecionar os cards
   selectedCards();
 };
+
 
 const createCards = (infos) => {
   const template = infos.reduce((accumulator, actual) => {
@@ -116,6 +128,18 @@ const createCards = (infos) => {
             : ""
         }
       </p>
+      <p>
+      ${
+        actual.links
+          ? `<p class="strong"> Ferramentas:</p> 
+             <ul>
+             ${templateListLink(actual.links)}
+             </ul>
+            `
+          : ""
+      }
+    </p>
+
     </div>
   </article>
     `);
